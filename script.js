@@ -214,31 +214,6 @@ project.from("#project-midsec h2", {
     delay: 0.5
 })
 
-// wire-animation
-// ${dets.x} ${dets.y}
-
-let initialpath = `M 50 80 Q 500 80 950 80`
-let finalPath = `M 50 80 Q 500 80 950 80`
-
-let anima = document.querySelector("#wire-animation");
-
-anima.addEventListener("mousemove", (dets) => {
-    path = `M 50 80 Q ${dets.x} ${dets.y} 950 80`
-    
-    gsap.to("svg path", {
-        attr : {d:path},
-        duration: 0.5,
-        ease: "power3.out"
-    })
-})
-
-anima.addEventListener("mouseleave", () => {
-    gsap.to("svg path", {
-        attr: {d: finalPath},
-        duration: 1.1,
-        ease: "elastic.out(1,0.2)"
-    })
-})
 
 // contact 
 
@@ -246,8 +221,9 @@ let contact = gsap.timeline({
     scrollTrigger : {
         trigger : "#contact-sec",
         scroller : "body",
+        markers : true,
         start : "top 60%",
-        end : "top 15%",
+        end : "top 5%",
         scrub: 2,
     }
 })
