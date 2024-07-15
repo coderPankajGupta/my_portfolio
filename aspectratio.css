@@ -92,12 +92,12 @@
     }
 
     footer {
-        padding: 5rem 20%;
+        padding: 1.5rem 10%;
     }
 
     footer p,
     footer a {
-        font-size: 40px;
+        font-size: 20px;
     }
 }
 
