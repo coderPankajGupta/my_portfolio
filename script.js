@@ -221,8 +221,8 @@ let contact = gsap.timeline({
     scrollTrigger : {
         trigger : "#contact-sec",
         scroller : "body",
-        start : "top 60%",
-        end : "top 5%",
+        start : "top 70%",
+        end : "top 30%",
         scrub: 2,
     }
 })
