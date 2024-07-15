@@ -1,0 +1,403 @@
+/* media  */
+
+@media screen and (min-width: 992px) {
+    #primary-nav {
+        height: 6vw;
+    }
+
+    .ri-close-line {
+        display: none;
+    }
+
+    #primary-nav h2 {
+        font-size: 3vw;
+    }
+
+    #right-nav li a {
+        font-size: 1.2vw;
+    }
+
+    #center #right img {
+        height: 50vh;
+    }
+
+    #left p {
+        font-size: 3vh;
+        margin-bottom: 100px;
+    }
+
+    #aboutme-nav h1,
+    #services-nav h1,
+    #skill-nav h1,
+    #project-nav h1,
+    #contact-nav h1 {
+        font-size: 8rem;
+    }
+
+    #aboutme-nav,
+    #services-nav,
+    #skill-nav,
+    #project-nav,
+    #contact-nav {
+        margin: 10vh 0;
+    }
+
+    .right-child p {
+        font-size: 4vh;
+    }
+
+    #service-sec h3 {
+        font-size: 5vh;
+    }
+
+    #service-sec p {
+        font-size: 3vh;
+    }
+
+    #skills h3 {
+        font-size: 5vh;
+    }
+
+    #skill-bar {
+        margin-bottom: 3vh;
+    }
+
+    #skill-bar .bar {
+        height: 24px;
+    }
+
+    #skill-midsec p {
+        font-size: 2vh;
+    }
+
+    #contact-sec form {
+        max-width: 110rem;
+        margin: 2rem auto;
+        margin-bottom: 3rem;
+    }
+
+    #contact-sec form input,
+    #contact-sec form textarea {
+        margin-bottom: 3rem;
+        padding: 1rem;
+        font-size: 2rem;
+    }
+
+    .btn {
+        width: 30vh;
+        height: 10vh;
+        font-size: 4vh;
+    }
+
+    footer {
+        padding: 5rem 20%;
+    }
+
+    footer p,
+    footer a {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    body {
+        overflow-x: hidden;
+    }
+    #right-nav2 {
+        display: none;
+    }
+
+    #main-sec {
+        padding: 1vw 5%;
+        /* overflow: hidden; */
+    }
+    #first {
+        position: relative;
+    }
+    #primary-nav h2 {
+        font-size: 2.4vw;
+        font-weight: 700;
+    }
+
+    .nav-toggel {
+        display: block;
+        margin-right: 20px;
+    }
+
+    #right-nav1 {
+        background-color: rgba(255, 255, 255, 0.377);
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        height: 90%;
+        width: 50%;
+        position: absolute;
+        top: 0;
+        right: -60%;
+        backdrop-filter: blur(10px);
+        padding: 120px 60px;
+        border-radius: 25% 0 25% 25%;
+        font-size: 2rem;
+        z-index: 4;
+    }
+
+    #right-nav1 i {
+        position: absolute;
+        top: 5%;
+        right: 10%;
+        font-size: 30px;
+        font-weight: 700;
+        background-color: black;
+        border-radius: 50%;
+        padding: 5px;
+        cursor: pointer;
+    }
+    .nav-toggel a {
+        text-decoration: none;
+    color: white;
+    display: block;
+    transition: .3s ease;
+    cursor: pointer;
+    } 
+    .nav-toggel a:hover{
+        color: #ea9815;
+        text-decoration: underline;
+        transform: scale(1.1);
+    }
+
+    #center #left h1,
+    h2 {
+        font-size: 3.9vw;
+        line-height: 4.4vw;
+    }
+
+    #center #right img {
+        height: 350px;
+    }
+
+    #aboutme-nav h1,
+    #services-nav h1,
+    #skill-nav h1,
+    #project-nav h1,
+    #contact-nav h1 {
+        font-size: 4.7rem;
+    }
+
+    #wire-animation {
+        display: none;
+    }
+
+    .right-child p {
+        font-size: 1.4rem;
+    }
+
+    #services #service-sec {
+        display: block;
+        text-align: center;
+    }
+
+    #service-sec .services {
+        display: inline-block;
+        padding: 20px 10px;
+        width: 100%;
+    }
+
+    #service-sec h3 {
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    #service-sec p {
+        font-size: 1.15rem;
+    }
+
+    #skills h3 {
+        font-size: 1.9rem;
+    }
+}
+
+/* middle  */
+
+@media screen and (max-width: 767px) {
+    #primary-nav h2 {
+        font-size: 4vw;
+        font-weight: 600;
+    }
+    #right-nav1 {
+        justify-content: center;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
+    #center #left h1,
+    h2 {
+        font-size: 8vw;
+        line-height: 8.5vw;
+    }
+
+    #center #left {
+        width: 100%;
+    }
+
+    #left p,
+    #hireme,
+    #lets {
+        font-size: 17px;
+    }
+
+    #center #right {
+        display: none;
+    }
+
+    .hire {
+        width: 100%;
+    }
+
+    #aboutme-nav h1,
+    #services-nav h1,
+    #skill-nav h1,
+    #project-nav h1,
+    #contact-nav h1 {
+        font-size: 4.8rem;
+    }
+
+    #section2 {
+        display: block;
+    }
+
+    #section2 .left-child {
+        width: 100%;
+    }
+
+    #section2 .right-child {
+        padding: 8px 40px;
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .right-child p {
+        font-size: 1.4rem;
+    }
+
+    #service-sec h3 {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    #service-sec p {
+        font-size: 1.15rem;
+    }
+
+    #skills h3 {
+        font-size: 1.9rem;
+    }
+
+    #skill-midsec,
+    #development {
+        display: block;
+        width: 100%;
+    }
+
+    #frontend,
+    #programming,
+    #database {
+        display: block;
+        width: 100%;
+    }
+
+    #project-sec {
+        height: 100vh;
+    }
+}
+
+/* small screen  */
+
+@media screen and (max-width: 478px) {
+    #main-sec {
+        padding: 25px 10px;
+    }
+
+    #right-nav1 {
+        justify-content: center;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    #primary-nav h2 {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+
+    #center #left h1,
+    h2 {
+        font-size: 10vw;
+        line-height: 10vw;
+    }
+
+    #left p,
+    #hireme,
+    #lets {
+        font-size: 14px;
+    }
+
+    #aboutme-nav,
+    #services-nav,
+    #skill-nav,
+    #project-nav,
+    #contact-nav {
+        height: 2.7rem;
+    }
+
+    #aboutme-nav h1,
+    #services-nav h1,
+    #skill-nav h1,
+    #project-nav h1,
+    #contact-nav h1 {
+        font-size: 1.8rem;
+    }
+
+    .left-child .img-container {
+        height: 60vh;
+    }
+
+    .img-container img {
+        height: 60vh;
+    }
+
+    .right-child p {
+        font-size: 1rem;
+    }
+
+    #service-sec i {
+        height: 9vh;
+        font-size: 8vh;
+    }
+
+    #service-sec h3 {
+        font-size: 1.5rem;
+    }
+
+    #service-sec p {
+        font-size: 0.7rem;
+    }
+
+    #skills h3 {
+        font-size: 1.3rem;
+    }
+
+    #frontend,
+    #programming,
+    #database {
+        padding: 0 10;
+    }
+
+    .btn {
+        width: 7rem;
+        font-size: 0.7rem
+    }
+
+    footer p {
+        font-size: 0.5rem;
+    }
+}

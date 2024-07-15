@@ -1,33 +1,42 @@
-// animation related to background videos.
-Draggable.create(".drag",{
-    type: "x",
-    bounds: ".container",
+// nav animation 
+
+let cross = gsap.timeline();
+
+cross.to("#right-nav1",{
+    right: 0,
+    duration: 0.5,
 })
 
-function overlap() {
-    let start = document.querySelector(".drag");
-    let end = document.querySelector(".circle");
-    let h3 = document.querySelector("h3");
+cross.from("#right-nav1 li", {
+    opacity: 0,
+    x: 150,
+    stagger: 0.2,
+})
 
-    let lightOff = start.getBoundingClientRect();
-    let lightOn = end.getBoundingClientRect();
-    let H3 = h3.getBoundingClientRect();
-    
-    if(lightOff.right > lightOn.left) {
-        document.querySelector("#video1").style.opacity = 0;
-        document.querySelector("h3").style.opacity = 0;
-    } else {
-        document.querySelector("#video1").style.opacity = 1;
-        document.querySelector("h3").style.opacity = 1;
-    }
-}
+cross.from("#right-nav1 i", {
+    x: 150,
+    duration: 0.5,
+    opacity: 0
+})
 
-window.addEventListener("mousemove",overlap);
+let menu = document.querySelector(".nav-toggel i");
+let close = document.querySelector("#right-nav1 i")
+
+cross.pause();
+
+menu.addEventListener("click", () => {
+    cross.play();
+})
+
+close.addEventListener("click", () => {
+    cross.reverse();
+})
 
 //   animation for first page
+
 let tl = gsap.timeline();
 
-tl.from("#nav h2, #nav li",{
+tl.from("#primary-nav h2, #primary-nav li",{
     y:-30,
     opacity: 0,
     duration: 0.3,
@@ -75,7 +84,7 @@ tl.from(".container", {
 
 let tl2 = gsap.timeline({
     scrollTrigger : {
-        trigger : "#page2",
+        trigger : "#about-me",
         scroller: "body",
         start : "top 60%",
         end : "top 10%",
@@ -83,7 +92,7 @@ let tl2 = gsap.timeline({
     }
 })
 
-tl2.from("#nav2 h1", {
+tl2.from("#aboutme-nav h1", {
     y: -50,
     opacity: 0,
     duration: 1.5,
@@ -108,7 +117,7 @@ tl2.from(".right-child p", {
 
 let tl3 = gsap.timeline({
     scrollTrigger : {
-        trigger : "#page3",
+        trigger : "#services",
         scroller: "body",
         start : "top 50%",
         end : "top 20%",
@@ -116,28 +125,28 @@ let tl3 = gsap.timeline({
     }
 });
 
-tl3.from("#nav3 h1", {
+tl3.from("#services-nav h1", {
     y: -30,
     opacity : 0,
     duration :1.5,
     delay : 0.5
 })
 
-tl3.from("#page3 #service-sec #first-service", {
+tl3.from("#services #service-sec #first-service", {
     x: -35,
     opacity: 0,
     duration: 0.5,
     delay: 0.3,
 })
 
-tl3.from("#page3 #service-sec #second-service", {
+tl3.from("#services #service-sec #second-service", {
     x: -35,
     opacity: 0,
     duration: 0.5,
     delay: 0.4,
 })
 
-tl3.from("#page3 #service-sec #third-service", {
+tl3.from("#services #service-sec #third-service", {
     x: -35,
     opacity: 0,
     duration: 0.5,
@@ -238,7 +247,7 @@ let contact = gsap.timeline({
         trigger : "#contact-sec",
         scroller : "body",
         start : "top 60%",
-        end : "top 5%",
+        end : "top 15%",
         scrub: 2,
     }
 })
